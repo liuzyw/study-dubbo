@@ -4,6 +4,15 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -32,10 +41,12 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.11.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-log4j2:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
@@ -66,19 +77,17 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-devtools:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.10.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.20.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.netty:netty:3.2.5.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.11" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.12.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.12.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.8" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.yetus:audience-annotations:0.5.0" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty:3.10.5.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.github.sgroschupf:zkclient:0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:16.0.1" level="project" />
     <orderEntry type="library" name="Maven: javassist:javassist:3.12.1.GA" level="project" />
     <orderEntry type="module" module-name="dubbo-api" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />

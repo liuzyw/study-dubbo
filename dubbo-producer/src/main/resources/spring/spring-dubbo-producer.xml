@@ -12,13 +12,20 @@
   <dubbo:application name="dubbo-producer"/>
   <!--配置dubbo注册中心 这里zk注册中心，需要提前启动zk-->
   <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
-  <dubbo:protocol name="dubbo" port="20880" />
-
+  <dubbo:protocol name="dubbo" port="20880"/>
+  <!-- 连接监控中心 -->
+  <dubbo:monitor protocol="registry"/>
   <!--包扫描-->
   <!--<dubbo:annotation package="com.study.dubbo.producer.service.impl"/>-->
 
   <bean class="com.study.dubbo.producer.service.impl.ProducerHelloServiceImpl" id="producerHelloService"/>
+  <bean class="com.study.dubbo.producer.service.impl.UserServiceImpl" id="userService"/>
 
-  <dubbo:service executes="10"
-    interface="com.study.dubbo.api.service.ProducerHelloService" ref="producerHelloService"/>
+
+  <dubbo:service executes="10" interface="com.study.dubbo.api.service.ProducerHelloService" ref="producerHelloService"
+    version="1.0.0"/>
+
+
+  <dubbo:service executes="10" interface="com.study.dubbo.api.service.UserService" ref="userService"
+    version="1.0.0"/>
 </beans>

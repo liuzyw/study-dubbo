@@ -13,6 +13,7 @@
     <module>dubbo-producer</module>
     <module>dubbo-consumer</module>
     <module>dubbo-api</module>
+    <module>dubbo-ops</module>
   </modules>
 
 
